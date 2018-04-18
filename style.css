@@ -37,30 +37,30 @@
   grid-column: 1/9;
   grid-row-start:1;
   grid-row-end:15;
-  /*background-color: green;*/
+  background-color: green;
 }
 
 .s2 {
   grid-column: 1/9;
   grid-row-start:1;
   grid-row-end:15;
-  /*background-color: red;*/
+  background-color: red;
 }
 .s3 {
   grid-column: 1/9;
   grid-row-start:1;
   grid-row-end:15;
-  /*background-color: yellow;*/
+  background-color: yellow;
 }
 .s4 {
   grid-column: 1/9;
   grid-row-start:1;
   grid-row-end:15;
-  /*background-color: blue;*/
+  background-color: blue;
 }
 .s5 {
   grid-column: 1/9;
   grid-row-start:1;
   grid-row-end:15;
-  /*background-color: orange;*/
+  background-color: orange;
 }
