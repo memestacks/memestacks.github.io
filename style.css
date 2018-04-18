@@ -15,8 +15,8 @@ button {
   border-color: rgba(0,0,0,.0);
   border: none!important;
   font-size: 13pt;
-  width: 130px;
-  height: 42px;
+  width: 150px;
+  height: 52px;
 }
 
 @font-face {
@@ -182,6 +182,14 @@ button {
 
 }
 
+.phone {
+  position: absolute;
+  right:70px;
+  height:auto;
+  width:400px;
+  top:900px;
+
+}
 
 /*
 Purple color: #9601FF
