@@ -102,12 +102,13 @@ button {
 }
 
 .shapes {
-  background-image:url('shapes.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
   height:680px;
   width:680px;
   grid-column: 5/10;
+  position:absolute;
+  right:-45px;
+  top:-20px;
+  z-index: -100;
 }
 
 .large-text {
