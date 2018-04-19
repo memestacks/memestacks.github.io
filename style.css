@@ -139,6 +139,9 @@ button {
   display:grid;
   grid-template-columns: repeat(10, 1fr);
   grid-auto-rows: minmax(48px, 48px);
+
+  transform: scale(0.9);
+  transform-origin: 0 0;
 }
 .them {
   grid-column: 1/10;
@@ -187,11 +190,10 @@ button {
 
 .phone {
   position: absolute;
-  right:70px;
+  right:-180px;
   height:auto;
-  width:400px;
-  top:900px;
-
+  width:406px;
+  top:-15px;
 }
 
 /*
@@ -206,16 +208,19 @@ Green color: #00FFC1
   display:grid;
   grid-template-columns: repeat(10, 1fr);
   grid-auto-rows: minmax(48px, 48px);
+
+  transform: scale(0.9);
+  transform-origin: 0 0;
 }
 
 #angled {
   background-color:#222;
-  width:120vw;
+  width:130vw;
   height:1010px;
   -webkit-clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0% 100%);
 clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0% 100%);
   position: absolute;
-  margin-left: -180.49px;
+  margin-left: -200.49px;
 }
 #purpleThing {
   position: absolute;
