@@ -4,6 +4,8 @@
 }
 html {
   overflow-x: hidden !important;
+  transform: scale(0.9);
+  transform-origin: 50% 0%;
 }
 
 button {
@@ -102,11 +104,11 @@ button {
 }
 
 .shapes {
-  height:680px;
-  width:680px;
+  height:700px;
+  width:800px;
   grid-column: 5/10;
   position:absolute;
-  right:-45px;
+  right:-145px;
   top:-20px;
   z-index: -100;
 }
@@ -208,12 +210,12 @@ Green color: #00FFC1
 
 #angled {
   background-color:#222;
-  width:100vw;
+  width:120vw;
   height:1010px;
   -webkit-clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0% 100%);
 clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0% 100%);
   position: absolute;
-  margin-left: -118.49px;
+  margin-left: -180.49px;
 }
 #purpleThing {
   position: absolute;
