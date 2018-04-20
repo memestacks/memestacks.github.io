@@ -17,9 +17,9 @@ button {
   border-radius: 8px;
   border-color: rgba(0,0,0,.0);
   border: none!important;
-  font-size: 13pt;
-  width: 150px;
-  height: 52px;
+  font-size: 1.4vw;
+  width: 15vw;
+  height: 4.3vw;
 }
 
 @font-face {
@@ -45,7 +45,7 @@ button {
 /*40pt for main; 13pt;*/
 .corner-title {
   font-family: 'sansb';
-  font-size: 27pt;
+  font-size: 2.5vw;
   grid-row: 2/2;
   grid-column: 2/3;
 }
@@ -59,7 +59,7 @@ button {
 }
 .nav-link {
   font-family: 'sans';
-  font-size:13pt;
+  font-size:1.4vw;
   grid-row-start: 0;
   grid-row-end: 0;
   color:white;
@@ -70,8 +70,8 @@ button {
 }
 
 .shapes {
-  height:700px;
-  width:800px;
+  height:50vw;
+  width:60vw;
   grid-column: 9/20;
   grid-row: 1/22;
   z-index: -100;
@@ -81,13 +81,14 @@ button {
 
 .large-text {
   font-family: 'sansb';
-  font-size: 40pt;
+  font-size: 4.2vw;
   grid-row: 6/8;
   grid-column: 2/10;
 }
+
 .cLine {
   position:absolute;
-  width: 170px;
+  width: 13vw;
   margin-top: 3.5vw;
   margin-left: -0.5vw;
 }
@@ -100,7 +101,7 @@ margin-top:28vw;
 
 .subtext {
   font-family: 'sans';
-  font-size: 13pt;
+  font-size: 1.4vw;
   grid-row: 10/12;
   grid-column: 2/10;
 }
@@ -113,15 +114,15 @@ margin-top:28vw;
   grid-column: 2/17;
   grid-row: 20/26;
   font-family: 'sansb';
-  font-size: 40pt;
-  line-height: 105px;
+  font-size: 3.68vw;
+  line-height: 2;
 }
 
 .me {
   grid-column: 2/9;
   grid-row: 22/26;
   font-family: 'sansb';
-  font-size: 40pt;
+  font-size: 3.68vw;
 }
 
 .me-text {
@@ -138,13 +139,13 @@ margin-top:28vw;
   grid-column: 2/20;
   grid-row:24/28;
   font-family: 'sans';
-  font-size: 13pt;
-  line-height: 22px;
+  font-size: 1.4vw;
+  line-height: 1.1;
 }
 
 .phone {
-  height:680px;
-  width:380px;
+  height:57vw;
+  width:30vw;
   grid-row: 20/28;
   grid-column: 14/20;
 
@@ -154,9 +155,9 @@ margin-top:28vw;
 }
 .dawkins {
   height:auto;
-  width:295px;
-  margin-left: 45px;
-  margin-top: 169px;
+  width:23.4vw;
+  margin-left: 3.5vw;
+  margin-top: 13.25vw;
 }
 /*
 position: absolute;
@@ -168,8 +169,11 @@ Purple color: #9601FF
 Green color: #00FFC1
 */
 
-#angleCon {
-  grid-row: 30/40;
+.angleCon {
+  grid-row: 32/45;
+  grid-column: 1/20;
+  width:120vw;
+  margin-left: -10vw;
 }
 
 #angled {
@@ -200,20 +204,20 @@ overflow-y: hidden;
 }
 
 .bottomNav {
-  grid-row: 42;
+  grid-row: 41;
 }
 
 .bottomTitle {
   font-family: 'sans';
-  font-size: 26pt;
+  font-size: 2.4vw;
   color:white;
   grid-column: 2/3;
   z-index: 1000;
   line-height: 2;
 }
 .linkHead {
-  font-family: 'sans';
-  font-size: 18pt;
+  font-family: 'sansb';
+  font-size: 1.67vw;
   color:white;
   grid-column: 6/13;
   z-index: 1000;
@@ -222,22 +226,22 @@ overflow-y: hidden;
 
 .bottomLinks {
   font-family: 'sans';
-  font-size: 13pt;
-  grid-row: 43/43;
-  line-height:45px;
+  font-size: 1.4vw;
+  grid-row: 42/42;
+  line-height:2.3;
   z-index: 1000;
   color:white;
 }
 a {
   text-decoration: none;
-  font-size: 13pt;
+  font-size: 1.4vw;
   font-family: 'sans';
   color:white;
 }
 
 .quickLinks {
   font-family: 'sansb';
-  font-size: 18pt;
+  font-size: 1.67vw;
   color:white;
   grid-column: 16/20;
   z-index: 1000;
@@ -247,9 +251,9 @@ a {
 .bottomText {
   color:grey;
   font-family: 'sans';
-  font-size: 13pt;
+  font-size: 1.4vw;
   grid-column: 1/20;
-  grid-row: 45;
+  grid-row: 44;
   z-index: 1000;
   text-align: center;
   overflow-y: hidden;
