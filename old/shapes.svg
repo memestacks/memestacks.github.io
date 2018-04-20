@@ -10,7 +10,7 @@
             <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0.588235294   0 0 0 0 0.00392156863   0 0 0 0 1  0 0 0 0.415704257 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <path d="M658.5,281.369581 C632.662053,262.016825 630.160189,293.458495 605.067623,280.78745 C579.975056,268.116406 580.863085,272.934134 559.411701,281.369581 C537.960317,289.805029 527.262897,265.275357 508.277647,275.569279 C489.292396,285.863202 482.960511,287.719044 462.5,275.569279" id="path-3"></path>
+        <path d="M580,281.369581 C554.162053,262.016825 551.660189,293.458495 526.567623,280.78745 C501.475056,268.116406 502.363085,272.934134 480.911701,281.369581 C459.460317,289.805029 448.762897,265.275357 429.777647,275.569279 C410.792396,285.863202 404.460511,287.719044 384,275.569279" id="path-3"></path>
         <filter x="-16.8%" y="-200.8%" width="133.7%" height="719.0%" filterUnits="objectBoundingBox" id="filter-4">
             <feMorphology radius="10" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="13" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
@@ -20,7 +20,7 @@
             <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 1   0 0 0 0 0.756862745  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <path d="M592.5,314.369581 C566.662053,295.016825 564.160189,326.458495 539.067623,313.78745 C513.975056,301.116406 514.863085,305.934134 493.411701,314.369581 C471.960317,322.805029 461.262897,298.275357 442.277647,308.569279 C423.292396,318.863202 416.960511,320.719044 396.5,308.569279" id="path-5"></path>
+        <path d="M514,314.369581 C488.162053,295.016825 485.660189,326.458495 460.567623,313.78745 C435.475056,301.116406 436.363085,305.934134 414.911701,314.369581 C393.460317,322.805029 382.762897,298.275357 363.777647,308.569279 C344.792396,318.863202 338.460511,320.719044 318,308.569279" id="path-5"></path>
         <filter x="-16.8%" y="-200.8%" width="133.7%" height="719.0%" filterUnits="objectBoundingBox" id="filter-6">
             <feMorphology radius="10" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="13" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
@@ -50,18 +50,18 @@
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-Home" transform="translate(-510.000000, 0.000000)">
+        <g id="Desktop" transform="translate(-510.000000, 0.000000)">
             <g id="Upper" transform="translate(112.000000, -127.000000)">
                 <g id="Background-shapes" transform="translate(398.000000, 0.000000)">
                     <g id="Rectangle-4" transform="translate(331.189503, 253.458177) rotate(-13.000000) translate(-331.189503, -253.458177) ">
                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                         <use fill="#9601FF" fill-rule="evenodd" xlink:href="#path-1"></use>
                     </g>
-                    <g id="Line-2" stroke-linecap="round" transform="translate(560.500000, 278.500000) rotate(-1.000000) translate(-560.500000, -278.500000) ">
+                    <g id="Line-2" stroke-linecap="round" transform="translate(482.000000, 278.500000) rotate(-1.000000) translate(-482.000000, -278.500000) ">
                         <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
                         <use stroke="#000000" stroke-width="20" xlink:href="#path-3"></use>
                     </g>
-                    <g id="Line-2" stroke-linecap="round" transform="translate(494.500000, 311.500000) rotate(-1.000000) translate(-494.500000, -311.500000) ">
+                    <g id="Line-2" stroke-linecap="round" transform="translate(416.000000, 311.500000) rotate(-1.000000) translate(-416.000000, -311.500000) ">
                         <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
                         <use stroke="#FFFFFF" stroke-width="20" xlink:href="#path-5"></use>
                     </g>
