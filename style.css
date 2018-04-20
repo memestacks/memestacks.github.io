@@ -4,6 +4,7 @@
 }
 html {
   overflow-x: hidden;
+  height:2000px;
   transform: scale(0.9);
   transform-origin: 50% 0%;
 }
@@ -40,8 +41,6 @@ button {
   display:grid;
   grid-template-columns: repeat(20, 1fr);
   grid-auto-rows: minmax(50px, auto);
-  align-content: center;
-  justify-content: center;
 }
 /*40pt for main; 13pt;*/
 .corner-title {
@@ -76,6 +75,8 @@ button {
   grid-column: 9/20;
   grid-row: 1/22;
   z-index: -100;
+  align-items: right;
+  justify-content: right;
 }
 
 .large-text {
@@ -113,6 +114,7 @@ margin-top:28vw;
   grid-row: 20/26;
   font-family: 'sansb';
   font-size: 40pt;
+  line-height: 105px;
 }
 
 .me {
@@ -134,17 +136,27 @@ margin-top:28vw;
 
 .why {
   grid-column: 2/20;
-  grid-row:25/28;
+  grid-row:24/28;
   font-family: 'sans';
   font-size: 13pt;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .phone {
-  height:auto;
+  height:680px;
   width:380px;
   grid-row: 20/28;
   grid-column: 14/20;
+
+  background-image: url('phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.dawkins {
+  height:auto;
+  width:300px;
+  margin-left: 40px;
+  margin-top: 160px;
 }
 /*
 position: absolute;
@@ -175,7 +187,7 @@ overflow-y: hidden;
   background-color: #9601FF;
   width: 320px;
   height: 80px;
-  margin-top: 153vw;
+  margin-top: 158vw;
   margin-left: 54vw;
   z-index: 1000;
   border-radius: 10px;
