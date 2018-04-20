@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
   <body>
     <div class="container">
@@ -42,14 +44,14 @@
         Best of that other <b>site</b>, yea that one... you know.
       </div>
       <div class="phone">
-        <img src="dawkins.png" class="dawkins">
+        <img src="dawkins.png" onmouseover="$('.dawkins').animateCss('tada');" class="dawkins animated">
       </div>
 
 
       <img src="footer.svg" class="angleCon">
       <span class="bottomNav bottomTitle">Memestacks.</span>
 
-      <span class="bottomNav linkHead">(Please help us we're like dying)</span>
+      <span class="bottomNav linkHead">Please help us we're like dying</span>
 
             <span class="bottomLinks" style="grid-column: 6/13;">
               <a href="#">Patreon</a><br>
@@ -70,6 +72,34 @@
             </span>
 
             <span class="bottomText">Created by us, cuz we're cheap 2018</span>
+            <script>
+            $.fn.extend({
+              animateCss: function(animationName, callback) {
+                var animationEnd = (function(el) {
+                  var animations = {
+                    animation: 'animationend',
+                    OAnimation: 'oAnimationEnd',
+                    MozAnimation: 'mozAnimationEnd',
+                    WebkitAnimation: 'webkitAnimationEnd',
+                  };
+
+                  for (var t in animations) {
+                    if (el.style[t] !== undefined) {
+                      return animations[t];
+                    }
+                  }
+                })(document.createElement('div'));
+
+                this.addClass('animated ' + animationName).one(animationEnd, function() {
+                  $(this).removeClass('animated ' + animationName);
+
+                  if (typeof callback === 'function') callback();
+                });
+
+                return this;
+              },
+            });
+            </script>
 
     </body>
 </html>
