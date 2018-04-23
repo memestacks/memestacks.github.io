@@ -273,12 +273,13 @@ overflow-y: hidden;
   border-radius: 10px;
   transform: rotate(-11deg);
 }
-.socialIcons {
+/*.socialIcons {
   grid-row: 39;
   z-index: 1000;
   width: 2.5vw;
   height:auto;
 }
+
 .reddit {
 grid-column: 4/4;
 }
@@ -296,6 +297,23 @@ grid-column: 12/12;
 }
 .jk {
 grid-column: 14/14;
+}*/
+a {
+  text-decoration: none;
+}
+
+.socialIcons {
+width:2.6vw;
+padding-left: 2vw;
+vertical-align: middle;
+}
+
+.iconContainer {
+  grid-row: 38;
+  z-index: 1000;
+  width: 100vw;
+  height:auto;
+  grid-column: 5/15;
 }
 
 .bottomNavContainer {
