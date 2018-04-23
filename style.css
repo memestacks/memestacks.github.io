@@ -55,7 +55,7 @@ html {
   height:1vh;
   transform: scale(0.9);
   transform-origin: 50% 0%;
-  background-color: grey;
+  background-color: #222;
 }
 
 button {
