@@ -126,11 +126,11 @@ button:hover {
   padding-top: 1.2vw;
   width: 6vw;
   transition: background-color 0.3s ease-in-out;
+  border-radius: 1vw;
 }
 
 .nav-link:hover {
   background-color: rgba(0,0,0,0.1);
-  border-radius: 1vw;
 }
 
 .l1 {
@@ -268,7 +268,7 @@ overflow-y: hidden;
 .socialIcons {
   grid-row: 39;
   z-index: 1000;
-  width: 3vw;
+  width: 2.5vw;
   height:auto;
 }
 .reddit {
