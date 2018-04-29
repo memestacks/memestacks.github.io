@@ -106,6 +106,11 @@ button:hover {
   grid-template-columns: repeat(20, 1fr);
   grid-auto-rows: minmax(4vw, auto);
 }
+
+.container-x {
+	display: none;
+}
+
 /*40pt for main; 13pt;*/
 .corner-title {
   font-family: 'sansb';
@@ -394,5 +399,23 @@ span a {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+
+		.l1 .l2 .l3 .l4 .l5 {
+			display: none;
+		}
+
+		.container-x {
+			display: inline-block;
+    cursor: pointer;
+		}
+
+		.bar {
+			width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+		grid-row:0/0;
+		grid-column: 4/4;
+		}
 
 }

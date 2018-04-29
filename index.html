@@ -20,6 +20,13 @@
         <div class="l3 nav-link">Support</div>
         <div class="l4 nav-link">Program</div>
         <div class="l5 nav-link">Contact</div>
+
+        <div class="container-x">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
       </div>
       <div class="large-text">
         Welcome to the final <br> nail in the <img src="coffinLine.svg" class="cLine">coffin.
@@ -76,7 +83,7 @@
       <img src="icons/jk.svg" class="socialIcons jk">
 
     </div>
-    
+
       <span class="bottomNav bottomTitle">Memestacks.</span>
 
       <span class="bottomNav linkHead">Please help us we're like dying</span>
@@ -101,6 +108,11 @@
 
             <span class="bottomText">Created by us, cuz we're cheap 2018</span>
             <script>
+
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+
             $.fn.extend({
               animateCss: function(animationName, callback) {
                 var animationEnd = (function(el) {
