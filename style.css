@@ -121,6 +121,7 @@ button:hover {
   grid-row: 2/2;
   grid-column: 2/3;
   padding-top: 0.8vw;
+	transform: scale(0.9);
 }
 
 .nav {
@@ -143,6 +144,7 @@ button:hover {
   width: 6vw;
   transition: background-color 0.3s ease-in-out;
   border-radius: 1vw;
+	transform: scale(0.9);
 }
 
 .nav-link:hover {
@@ -167,6 +169,7 @@ button:hover {
   font-size: 4.2vw;
   grid-row: 6/8;
   grid-column: 2/10;
+	transform: scale(0.9);
 }
 
 .cLine {
@@ -174,6 +177,7 @@ button:hover {
   width: 13vw;
   margin-top: 3.0vw;
   margin-left: -0.5vw;
+	transform: scale(0.9);
 }
 
 /*
@@ -187,11 +191,13 @@ margin-top:28vw;
   font-size: 1.4vw;
   grid-row: 10/12;
   grid-column: 2/10;
+	transform: scale(0.9);
 }
 
 .get-beta {
   grid-row: 13/14;
   grid-column: 2/4;
+	transform: scale(0.9);
 }
 .them {
   grid-column: 2/17;
@@ -199,6 +205,7 @@ margin-top:28vw;
   font-family: 'sansb';
   font-size: 3.68vw;
   line-height: 2;
+	transform: scale(0.9);
 }
 
 .me {
@@ -206,16 +213,19 @@ margin-top:28vw;
   grid-row: 22/26;
   font-family: 'sansb';
   font-size: 3.68vw;
+	transform: scale(0.9);
 }
 
 .me-text {
   grid-column: 1/2;
   grid-row: 2/2;
+	transform: scale(0.9);
 }
 
 .me-other-text {
   grid-column: 2/10;
   grid-row: 2/2;
+	transform: scale(0.9);
 }
 
 .why {
@@ -224,6 +234,7 @@ margin-top:28vw;
   font-family: 'sans';
   font-size: 1.4vw;
   line-height: 1.1;
+	transform: scale(0.9);
 }
 
 .phone {
@@ -231,6 +242,7 @@ margin-top:28vw;
   width:30vw;
   grid-row: 20/28;
   grid-column: 14/20;
+	transform: scale(0.9);
 
   background-image: url('phone.svg');
   background-repeat: no-repeat;
@@ -241,6 +253,7 @@ margin-top:28vw;
   width:23.4vw;
   margin-left: 3.5vw;
   margin-top: 13.25vw;
+	transform: scale(0.9);
 }
 /*
 position: absolute;
