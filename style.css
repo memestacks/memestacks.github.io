@@ -410,10 +410,10 @@ span a {
 		}
 
 		.bar {
-			width: 35px;
-    height: 5px;
+			width: 3.5vw;
+    height: 0.5vw;
     background-color: black;
-    margin: 6px 0;
+    margin: 0.6vw 0;
 		grid-row:0/0;
 		grid-column: 4/4;
 		}
