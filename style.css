@@ -163,6 +163,17 @@ button:hover {
   align-items: right;
   justify-content: right;
 }
+
+.shapes-t {
+	height:auto;
+  width:40vw;
+  grid-column: 13/20;
+  grid-row: 1/22;
+  align-items: right;
+  justify-content: right;
+	display: none;
+}
+
 .shapes-m {
 	height:auto;
   width:60vw;
@@ -317,6 +328,14 @@ Green color: #00FFC1
 	display: none;
 }
 
+.angleCon-t {
+	grid-row: 32/45;
+  grid-column: 1/20;
+  width:120vw;
+  margin-left: -10vw;
+	display: none;
+}
+
 #angled {
   background-color:#222;
   width:115vw;
@@ -462,8 +481,8 @@ span a {
 		}
 
 		.bar {
-			width: 3.5vw; /*3.5vw;*/
-	    height: 0.5vw; /*0.5vw;*/
+			width: 4vw; /*3.5vw;*/
+	    height: 0.7vw; /*0.5vw;*/
 	    background-color: black;
 	    margin: 0.6vw;/*0.6vw 0;*/
 			grid-row:0/0;
@@ -471,85 +490,82 @@ span a {
 		}
 
 		.shapes-d {
-			grid-column: 14/20;
+			display: none;
 		}
 
-
-
-		.bottomText {
-			grid-row: 42;
-			font-size: 4.2vw;
+		.shapes-t {
+			display: block;
 		}
 
-		.bottomNav {
-			grid-row: 36;
+		.why {
+			margin-top: 8vw;
+			font-size: 2.5vw;
+			grid-row: 26/30;
 		}
-
-		.linkHead {
-			font-size: 3.34vw;
-			grid-row: 37;
-			grid-column: 2/13;
-		}
-		.quickLinks {
-			font-size: 3.34vw;
-			grid-row: 37;
-		}
-
-		.blleft {
-			grid-column: 2/13 !important;
-		}
-		.bottomLinks {
-			font-size: 4.2vw;
-			grid-row: 38/38;
-		}
-		span a {
-			font-size: 4.2vw;
-		}
-
-		.bottomTitle {
-			font-size: 4.8vw;
-			grid-row: 36;
-		}
-
-		.iconContainer {
-			grid-row: 35;
-		}
-
-		.socialIcons {
-			width:5.2vw;
-		}
-
 
 		.angleCon {
 			display: none;
 		}
 
-		.angleCon-m {
+		.angleCon-t {
 			display: block;
+
 		}
 
-		.why {
-			display: none;
+		.iconContainer {
+			margin-top: 8vw;
+			grid-row: 36;
+			grid-column: 8/20;
 		}
 
-		.why-m {
-			display: block;
-			font-size: 4.0vw;
-			grid-row: 26/30;
+		.bottomNav {
+			grid-row: 38;
+		}
+		.bottomTitle {
+			font-size: 4.8vw;
+		}
+
+		.linkHead {
+			grid-column: 9/15;
+			font-size: 2.0vw;
+			line-height: 5;
+		}
+
+		span a {
+			font-size: 1.8vw;
+		}
+
+		.blleft {
+			margin-left: 15vw;
+			margin-top: -20vw;
+		}
+
+		.blright {
+			margin-top: -20vw;
+		}
+
+		.quickLinks {
+			font-size: 2.0vw;
+			line-height: 5;
+		}
+
+		.socialIcons {
+			width:3.6vw;
 		}
 
 		.phone {
-			grid-row: 26/30;
+			grid-row: 27/30;
 			height:100vw;
-			width: 55vw;
-			grid-column: 9/20;
-			margin-top: 10vw;
+			width: 35vw;
+			grid-column: 12/20;
+			margin-top: 15vw;
+			margin-left: 5vw;
 		}
 
 		.dawkins {
-			width: 42vw;
-			margin-left: 8vw;
-			margin-top: 25vw;
+			width: 25vw;
+			margin-top: 18vw;
+			margin-left: 5vw;
 		}
 
 		.them-d {
@@ -600,7 +616,7 @@ span a {
 		}
 
 		.subtext {
-			font-size: 2.8vw;
+			font-size: 2.6vw;
 			grid-column: 2/20;
 			line-height: 4.5vw;
 		}
