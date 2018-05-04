@@ -287,7 +287,7 @@ margin-top:28vw;
 }
 
 .them-m {
-	grid-column: 2/17;
+	grid-column: 2/20;
   grid-row: 20/26;
   font-family: 'sansb';
   font-size: 3.68vw;
@@ -843,6 +843,7 @@ span a {
 			margin-top: 10vw;
 			width: 40vw;
 			height: 15vw;
+			   -webkit-appearance: none;
 		}
 
 		button {
