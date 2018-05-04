@@ -65,6 +65,7 @@ html {
 
 #success {
 	font-family: 'sans';
+	font-size: 1.4vw;
 	display: none;
 }
 

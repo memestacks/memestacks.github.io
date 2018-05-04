@@ -46,7 +46,7 @@
     <div class="mc-field-group">
         <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on">
         <input type="submit" value="get beta     >" onclick="didSub()" name="subscribe">
-        <span id="success" onclick="localStorage.removeItem('sub');location.reload();">You already Signed up! Click here to sign up again.</span>
+        <!--<span id="success" onclick="localStorage.removeItem('sub');location.reload();">You already Signed up! Click here to sign up again.</span>-->
     </div>
 </form>
 
@@ -54,14 +54,14 @@
   function hideSub() {
     var val = localStorage.getItem("sub");
     if (val == "true") {
-      document.getElementsByTagName('input')[0].style.display = "none";
-      document.getElementsByTagName('input')[1].style.display = "none";
+      document.getElementsByTagName('input')[0].placeholder = "Enter Another Email";
+      document.getElementsByTagName('input')[1].value = "sign up again >";
       document.getElementById("success").style.display = "block";
-    } else {
-      document.getElementsByTagName('input')[0].style.display = "inline-block";
-      document.getElementsByTagName('input')[1].style.display = "inline-block";
-      document.getElementById("success").style.display = "none";
-    }
+    } //else {
+      //document.getElementsByTagName('input')[0].style.display = "inline-block";
+      //document.getElementsByTagName('input')[1].style.display = "inline-block";
+      //document.getElementById("success").style.display = "none";
+    //}
   }
 
   hideSub();
