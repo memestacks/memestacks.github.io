@@ -59,6 +59,14 @@ html {
   background-color: #222;
 }
 
+.mc-field-group {
+
+}
+
+input {
+	outline:none;
+}
+
 input[type="submit"]  {
   background-color: #9601FF;
   color: #fff;
@@ -68,28 +76,44 @@ input[type="submit"]  {
   border-color: rgba(0,0,0,.0);
   border: none!important;
   font-size: 1.4vw;
-  width: 15vw;
-  height: 4.3vw;
-	margin-top: 2vw;
+  width: 10vw;
+  height: 3.5vw;
+	display: inline-block;
+	margin-left: 1vw;
 
-  box-shadow: 0px 0px 0px #9601FF;
+  box-shadow: 0vw 0vw 0vw #9601FF;
   transition: box-shadow 0.5s ease-in-out;
 }
 
 input[type="submit"]:hover {
-  box-shadow: 0px 0px 30px rgba(150, 1, 255, 0.5);
+  box-shadow: 0vw 0.0vw 0.85vw 0.2vw rgba(150, 1, 255, 0.5);
 }
 
 input[type="email"] {
+	display: inline-block;
 	width: 20vw;
-	height: 3vw;
+	height: 3.3vw;
 	font-size: 1.4vw;
 	font-family: 'sans';
 	border-radius: 4px;
 	border: none;
-	box-shadow: 0px 0px 0.5px;
+	box-sizing: initial!important;
+
+	transition: all .5s ease;
+	border-color: rgba(0,0,0,.0);
+	box-shadow: 0vw 0.23vw 0.85vw rgba(0,0,0,.05);
+
 	padding-left: 1vw;
 }
+
+input[type="email"]:hover {
+	box-shadow: 0vw 0.23vw 0.85vw 0.2vw rgba(0,0,0,0.05);
+}
+
+input::placeholder {
+  color:#9601FF;
+}
+
 
 @font-face {
   font-family: 'sansb';
@@ -237,7 +261,7 @@ margin-top:28vw;
 
 .get-beta {
   grid-row: 12/14;
-  grid-column: 2/4;
+  grid-column: 2/20;
 }
 
 .them-d {
@@ -497,6 +521,7 @@ span a {
 			font-size: 2.4vw;
 			width: 20vw;
 			height:5vw;
+
 		}
 
 		.bottomText {
@@ -631,7 +656,7 @@ span a {
 		}
 
 		.get-beta {
-			grid-column: 2/8;
+			grid-column: 2/20;
 			grid-row: 13/20;
 			font-size: 2.4vw;
 		}
@@ -792,9 +817,13 @@ span a {
 		}
 
 		.get-beta {
-			grid-column: 2/8;
+			grid-column: 2/20;
 			grid-row: 19/20;
 			font-size: 4.8vw;
+		}
+
+		input[type="submit"]{
+			margin-top: 10vw;
 		}
 
 		button {
