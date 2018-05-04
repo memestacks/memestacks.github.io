@@ -88,6 +88,7 @@ input[type="email"] {
 	border-radius: 4px;
 	border: none;
 	box-shadow: 0px 0px 0.5px;
+	padding-left: 1vw;
 }
 
 @font-face {
@@ -486,6 +487,18 @@ span a {
   and (min-device-width: 480px)
   and (max-device-width: 1024px) {
 
+		input[type="email"] {
+			width: 40vw;
+			height: 5vw;
+			font-size: 2.4vw;
+		}
+
+		input[type="submit"] {
+			font-size: 2.4vw;
+			width: 20vw;
+			height:5vw;
+		}
+
 		.bottomText {
 			font-size: 1.8vw;
 		}
@@ -653,6 +666,22 @@ span a {
 @media only screen
   and (max-device-width: 480px)
   and (orientation: portrait) {
+
+		.get-beta {
+			margin-top: 20vw;
+		}
+
+		input[type="email"] {
+			width: 80vw;
+			height: 10vw;
+			font-size: 4.8vw;
+		}
+
+		input[type="submit"] {
+			font-size: 4.8vw;
+			width: 40vw;
+			height:10vw;
+		}
 
 		.bottomText {
 			grid-row: 42;
