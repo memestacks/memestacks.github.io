@@ -266,7 +266,7 @@ margin-top:28vw;
 
 .subtext-m {
 	font-family: 'sans';
-  grid-row: 10/12;
+  grid-row: 9/12;
 	font-size: 4vw;
 	grid-column: 2/20;
 	display: none;
@@ -524,15 +524,19 @@ span a {
   and (min-device-width: 480px)
   and (max-device-width: 1024px) {
 
+		#form {
+			margin-top: 5vw;
+		}
+
 		input[type="email"] {
-			width: 40vw;
+			width: 25vw;
 			height: 5vw;
 			font-size: 2.4vw;
 		}
 
 		input[type="submit"] {
 			font-size: 2.4vw;
-			width: 20vw;
+			width: 15vw;
 			height:5vw;
 
 		}
@@ -831,12 +835,14 @@ span a {
 
 		.get-beta {
 			grid-column: 2/20;
-			grid-row: 19/20;
+			grid-row: 16/20;
 			font-size: 4.8vw;
 		}
 
 		input[type="submit"]{
 			margin-top: 10vw;
+			width: 40vw;
+			height: 15vw;
 		}
 
 		button {
@@ -860,6 +866,14 @@ span a {
 		}
 		.subtext-m {
 			display: block;
+		}
+
+		input[type="email"] {
+			display:none;
+		}
+
+		input[type="submit"] {
+			margin-top:-100vw;
 		}
 
 		.nav-link {
