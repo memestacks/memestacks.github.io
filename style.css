@@ -726,7 +726,7 @@ span a {
 		}
 
 		.bottomText {
-			grid-row: 42;
+			grid-row: 44;
 			font-size: 4.2vw;
 		}
 
@@ -736,12 +736,12 @@ span a {
 
 		.linkHead {
 			font-size: 3.34vw;
-			grid-row: 37;
+			grid-row: 39;
 			grid-column: 2/13;
 		}
 		.quickLinks {
 			font-size: 3.34vw;
-			grid-row: 37;
+			grid-row: 39;
 		}
 
 		.blleft {
@@ -749,7 +749,7 @@ span a {
 		}
 		.bottomLinks {
 			font-size: 4.2vw;
-			grid-row: 38/38;
+			grid-row: 40/40;
 		}
 		span a {
 			font-size: 4.2vw;
@@ -757,7 +757,7 @@ span a {
 
 		.bottomTitle {
 			font-size: 4.8vw;
-			grid-row: 36;
+			grid-row: 37;
 		}
 
 		.iconContainer {
@@ -792,7 +792,7 @@ span a {
 			height:100vw;
 			width: 55vw;
 			grid-column: 9/20;
-			margin-top: 10vw;
+			margin-top: 7vw;
 		}
 
 		.dawkins {
