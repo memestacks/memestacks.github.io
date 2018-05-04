@@ -728,6 +728,7 @@ span a {
 		.bottomText {
 			grid-row: 44;
 			font-size: 4.2vw;
+			margin-top: 5vw;
 		}
 
 		.bottomNav {
