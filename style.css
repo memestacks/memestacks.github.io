@@ -54,6 +54,7 @@ html {
   overflow-x: hidden;
   height:1vh;
   /*
+	transform: scale(0.9);
   transform-origin: 50% 0%;*/
   background-color: #222;
 }
@@ -159,6 +160,7 @@ button:hover {
   height:50vw;
   width:60vw;
   grid-column: 9/20;
+	margin-left: 1vw;
   grid-row: 1/22;
   align-items: right;
   justify-content: right;
@@ -466,6 +468,10 @@ span a {
   and (min-device-width: 480px)
   and (max-device-width: 1024px) {
 
+		.bottomText {
+			font-size: 1.8vw;
+		}
+
 		.background {
 			background-color: red;
 		}
@@ -724,6 +730,7 @@ span a {
 
 		.corner-title {
 			font-size: 5.5vw;
+			margin-top: -5vw;
 		}
 
 		.container {
@@ -774,6 +781,7 @@ span a {
 			display: inline-block;
     	cursor: pointer;
 			grid-column: 10/10;
+			margin-top: -5vw;
 		}
 
 		.bar {
