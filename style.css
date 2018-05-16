@@ -99,6 +99,32 @@ input::placeholder {
 	color: black;
 }
 
+#images {
+	margin-top:25vh;
+	z-index: 0;
+}
+#leftButton {
+	position:absolute;
+	margin-top:3.5vh;
+	width:4vw;
+	margin-left:8.3vw;
+	height:7vh;
+	border-radius:2vw;
+	outline:0 !important;
+	z-index: 100;
+}
+#rightButton {
+	position:absolute;
+	margin-top:3.5vh;
+	width:4vw;
+	margin-left:17.6vw;
+	height:7vh;
+	border-radius:2vw;
+	outline:0 !important;
+	opacity:0;
+	z-index: 100;
+}
+
 input[type="email"] {
 	display: inline-block;
 	width: 20vw;
@@ -413,8 +439,8 @@ overflow-y: hidden;
   z-index: 1000;
   width: 2.5vw;
   height:auto;
-}
-
+}*/
+/*
 .reddit {
 grid-column: 4/4;
 }
@@ -438,7 +464,8 @@ a {
 }
 
 .socialIcons {
-width:2.6vw;
+//width:2.6vw;
+width: 4.2vw;
 padding-left: 2vw;
 vertical-align: middle;
 }
@@ -524,6 +551,26 @@ span a {
 @media only screen
   and (min-device-width: 480px)
   and (max-device-width: 1024px) {
+
+		#images {
+			margin-top: 5vh;
+		}
+		#leftButton {
+			width: 5vw;
+			height: 5vw;
+			border-radius: 2.5vw;
+			margin-top:-4.1vh;
+			margin-left:9.5vw;
+			opacity: 0.5;
+		}
+		#rightButton {
+			width: 5vw;
+			height: 5vw;
+			border-radius: 2.5vw;
+			margin-top:-4.1vh;
+			margin-left:20.3vw;
+			opacity: 0.5;
+		}
 
 		#form {
 			margin-top: 5vw;
@@ -711,6 +758,26 @@ span a {
 @media only screen
   and (max-device-width: 480px)
   and (orientation: portrait) {
+
+		#images {
+			margin-top: 15vh;
+		}
+		#leftButton {
+			width: 8vw;
+			height: 8vw;
+			border-radius: 4vw;
+			margin-top:2.2vh;
+			margin-left:14.8vw;
+			opacity: 0.5;
+		}
+		#rightButton {
+			width: 8vw;
+			height: 8vw;
+			border-radius: 4vw;
+			margin-top:2.2vh;
+			margin-left:32vw;
+			opacity: 0.5;
+		}
 
 		.get-beta {
 			margin-top: 20vw;

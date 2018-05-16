@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>.async-hide { opacity: 0 !important} </style>
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
@@ -24,8 +22,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>69 best memes 2018</title>
-
+    <title>#1 best memes</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -128,73 +125,8 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
 
       <div class="phone">
-        <!--<img src="dawkins.png" onmouseover="$('.dawkins').animateCss('tada');" class="dawkins animated">-->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <style>.mySlides {width:100%;align-self: center;user-select: none;
-              -moz-user-select: none;
-              -khtml-user-select: none;
-              -webkit-user-select: none;
-              -o-user-select: none;}</style>
-
-        <div id="images" style="width:70%;height:50%;overflow:hidden;display:flex;justify-content: center;" class="w3-content w3-display-container dawkins"></div>
-        <!--<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>-->
-
-        <button id="leftButton" class="dawkins" onclick="help(-1)">left</button>
-        <button id="rightButton" class="dawkins" onclick="help(1)">right</button>
-
-        <script>
-        var slideIndex = 1;
-
-        function help(n) {
-          if (n == 1) {
-            $(".mySlides[style*='block']").css({ fontSize: 0 }).animate({
-    fontSize: 45
-},{
-    duration: 800,
-    easing: "swing",
-    step: function(t, fx){
-        var a = t / 17.296;
-        var x = 300 + Math.cos(a) * -300;
-        var y = 0 + Math.sin(a) * -100;
-        $(this).css({ marginLeft: x, marginTop: y });
-    },
-    done: function(){
-      plusDivs(1);
-    }
-});
- //.animateCss('slideOutRight', function (){plusDivs(1)});
-          } else {
-            $(".mySlides[style*='block']").css({ fontSize: 0 }).animate({
-    fontSize: 45
-},{
-    duration: 800,
-    easing: "swing",
-    step: function(t, fx){
-        var a = t / 17.296;
-        var x = -300 + Math.cos(a) * 300;
-        var y = 0 + Math.sin(a) * -100;
-        $(this).css({ marginLeft: x, marginTop: y });
-    },
-    done: function(){
-      plusDivs(1);
-    }
-});
-          }
-        }
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-          var i;var x = document.getElementsByClassName("mySlides");if (n > x.length) {slideIndex = 1}if (n < 1) {slideIndex = x.length}for (i = 0; i < x.length; i++) {x[i].style.display = "none";}x[slideIndex-1].style.display = "block";
-        }
-        $.getJSON("https://www.reddit.com/r/dankmemes/.json?jsonp=?&limit=69", function(data) {$.each(data.data.children, function(i,item){ var ext = String(item.data.url).substr(String(item.data.url).length - 4); if ( ext == ".png" || ext == ".jpg" || ext == "jpeg" || ext == ".gif") { $("<img/>").attr("src", item.data.url).attr("class","mySlides").appendTo("#images");}});showDivs(slideIndex);});
-      </script>
+        <img src="dawkins.png" onmouseover="$('.dawkins').animateCss('tada');" class="dawkins animated">
       </div>
-
 
 
       <img src="footer.svg" class="angleCon">
