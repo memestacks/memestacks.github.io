@@ -141,8 +141,8 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         <!--<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>-->
 
-        <button id="leftButton" class="dawkins" onclick="help(-1)">left</button>
-        <button id="rightButton" class="dawkins" onclick="help(1)">right</button>
+        <button id="leftButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(-1)">left</button>
+        <button id="rightButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(1)">right</button>
 
         <script>
         var slideIndex = 1;
@@ -191,7 +191,13 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         function showDivs(n) {
           var i;var x = document.getElementsByClassName("mySlides");if (n > x.length) {slideIndex = 1}if (n < 1) {slideIndex = x.length}for (i = 0; i < x.length; i++) {x[i].style.display = "none";}x[slideIndex-1].style.display = "block";
         }
-        $.getJSON("https://www.reddit.com/r/dankmemes/.json?jsonp=?&limit=69", function(data) {$.each(data.data.children, function(i,item){ var ext = String(item.data.url).substr(String(item.data.url).length - 4); if ( ext == ".png" || ext == ".jpg" || ext == "jpeg" || ext == ".gif") { $("<img/>").attr("src", item.data.url).attr("class","mySlides").appendTo("#images");}});showDivs(slideIndex);});
+        $.getJSON("https://www.reddit.com/r/dankmemes/.json?jsonp=?&limit=69", function(data) {$.each(data.data.children, function(i,item){ var ext = String(item.data.url).substr(String(item.data.url).length - 4); if ( ext == ".png" || ext == ".jpg" || ext == "jpeg" || ext == ".gif") {
+              $("<img/>").attr("src", item.data.url).attr("class","mySlides").appendTo("#images");
+              //$("<div/>").attr("style", "background-image:\""+item.data.url+"\"").attr("class","mySlides").appendTo("#images");
+            }
+          });
+            showDivs(slideIndex);
+         });
       </script>
       </div>
 
