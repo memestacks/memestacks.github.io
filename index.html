@@ -62,6 +62,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       <div class="subtext-m">
         Memestacks consolidates all the best <br><br>meme pages into one place.
       </div>
+      <img id="forIOS" src="ios.svg" />
 
 
 
@@ -154,7 +155,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
         <button id="leftButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(-1)">left</button>
         <button id="rightButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(1)">right</button>
-        <button id="backButton" style="" class="dawkins" onclick="help(0)">back</button>
+        <button id="backButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(0)">back</button>
 
         <script>
         var slideIndex = 1;
@@ -164,7 +165,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
             $(".mySlides[style*='block']").css({ fontSize: 0 }).animate({
     fontSize: 45
 },{
-    duration: 900,
+    duration: 500,
     easing: "swing",
     step: function(t, fx){
         var a = t / 17.296;
@@ -183,7 +184,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
             $(".mySlides[style*='block']").css({ fontSize: 0 }).animate({
     fontSize: 45
 },{
-    duration: 900,
+    duration: 500,
     easing: "swing",
     step: function(t, fx){
         var a = t / 17.296;
