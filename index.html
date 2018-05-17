@@ -129,14 +129,24 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
 
       <div class="phone">
-        <img src="dawkins.png" onmouseover="$('.dawkins').animateCss('tada');" class="dawkins animated">
+        <img src="dawkins.png" id="richard" onmouseover="$('.dawkins').animateCss('tada', function() {
+          document.getElementById('richard').style.display = 'none';
+
+
+            var element = document.getElementsByClassName('mySlides');
+            for(var i = 0, length = element.length; i < length; i++) {
+              element[i].style.visibility = 'visible';
+            }
+
+
+});" class="dawkins animated">
         <!--
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
         <style>.mySlides {
-              max-width:21vw;
-              min-width: 21vw;
-              height: 30vw;
+              max-width:17vw;
+              min-width: 17vw;
+              height: 28vw;
               align-self: center;
               user-select: none;
               -moz-user-select: none;
@@ -146,14 +156,16 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
               border: 15px solid #FFF;
               border-radius: 1.5vw;
               background-color: white;
-              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0vw 0.23vw 0.85vw rgba(0,0,0,.12);
               z-index: 1000;
+              position:relative;
+              visibility: hidden;
 
               }</style>
 
-        <div id="images" style="width:80%;height:60%;overflow:hidden;display:flex;justify-content: center;margin-top:35%;" class="w3-content w3-display-container dawkins"></div>
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        <div id="images" style="width:77%;height:60%;overflow:hidden;display:flex;justify-content: center;margin-top:37%;" class="w3-content w3-display-container dawkins"></div>
+        <!--<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>-->
 
         <button id="leftButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(-1)">left</button>
         <button id="rightButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(1)">right</button>
@@ -167,7 +179,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
             $(".mySlides[style*='block']").css({ fontSize: 0 }).animate({
     fontSize: 45
 },{
-    duration: 500,
+    duration: 400,
     easing: "swing",
     step: function(t, fx){
         var a = t / 17.296;
@@ -186,7 +198,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
             $(".mySlides[style*='block']").css({ fontSize: 0 }).animate({
     fontSize: 45
 },{
-    duration: 500,
+    duration: 400,
     easing: "swing",
     step: function(t, fx){
         var a = t / 17.296;
@@ -206,7 +218,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         }
 
         function showDivs(n) {
-          var i;var x = document.getElementsByClassName("mySlides");if (n > x.length) {slideIndex = 1}if (n < 1) {slideIndex = x.length}for (i = 0; i < x.length; i++) {x[i].style.display = "none";x[i].style.marginTop = 0;x[i].style.marginLeft = 0;}x[slideIndex-1].style.display = "block";
+          var i;var x = document.getElementsByClassName("mySlides");if (n > x.length) {slideIndex = 1}if (n < 1) {slideIndex = x.length}for (i = 0; i < x.length; i++) {x[i].style.display = "none";x[i].style.marginTop = 0;x[i].style.marginLeft = 0;x[i].style.zIndex = 1000;}x[slideIndex].style.display = "inline";x[slideIndex-1].style.display = "block";x[slideIndex].style.zIndex = 0;x[slideIndex-1].style.zIndex = 1000;x[slideIndex].style.position = "absolute";x[slideIndex-1].style.position = "relative";
         }
         $.getJSON("https://www.reddit.com/r/dankmemes/.json?jsonp=?&limit=69", function(data) {$.each(data.data.children, function(i,item){ var ext = String(item.data.url).substr(String(item.data.url).length - 4); if ( ext == ".png" || ext == ".jpg" || ext == "jpeg" || ext == ".gif") {
               $("<img/>").attr("src", item.data.url).attr("class","mySlides").appendTo("#images");
@@ -215,7 +227,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
           });
             showDivs(slideIndex);
          });
-      </script>-->
+      </script>
       </div>
 
 
