@@ -570,8 +570,14 @@ span a {
   and (min-device-width: 480px)
   and (max-device-width: 1024px) {
 
+		.mySlides {
+			min-width: 21vw !important;
+			max-width: 21vw !important;
+			height: 34vw !important;
+		}
+
 		#images {
-			margin-top: 3vw !important;
+			margin-top: 2.3vw !important;
 			margin-left: 4vw;
 		}
 		#leftButton {
@@ -785,12 +791,14 @@ span a {
   and (max-device-width: 480px)
   and (orientation: portrait) {
 		.mySlides {
+			max-width: 32vw !important;
+			min-width: 32vw !important;
 			width: 29vw !important;
-			height: 45vw !important;
+			height: 50vw !important;
 		}
 
 		#images {
-			margin-top: 9.5vw !important;
+			margin-top: 20.5vw !important;
 			margin-left: 6.5vw;
 		}
 		#leftButton {
