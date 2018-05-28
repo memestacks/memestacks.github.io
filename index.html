@@ -161,15 +161,22 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
               position:relative;
               visibility: hidden;
 
-              }</style>
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              }
+              #images {
+                width:77%;height:60%;overflow:hidden;display:flex;justify-content: center;margin-top:37%;
+              }
+            </style>
 
-        <div id="images" style="width:77%;height:60%;overflow:hidden;display:flex;justify-content: center;margin-top:37%;" class="w3-content w3-display-container dawkins"></div>
+        <div id="images" class="w3-content w3-display-container dawkins"></div>
         <!--<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>-->
 
-        <button id="leftButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(-1)">left</button>
-        <button id="rightButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(1)">right</button>
-        <button id="backButton" style="opacity:0.0 !important;" class="dawkins" onclick="help(0)">back</button>
+        <button id="leftButton" style="opacity:0.5 !important;" class="dawkins" onclick="help(-1)">left</button>
+        <button id="rightButton" style="opacity:0.5 !important;" class="dawkins" onclick="help(1)">right</button>
+        <button id="backButton" style="opacity:0.5 !important;" class="dawkins" onclick="help(0)">back</button>
 
         <script>
         var slideIndex = 1;
@@ -221,7 +228,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
           var i;var x = document.getElementsByClassName("mySlides");if (n > x.length) {slideIndex = 1}if (n < 1) {slideIndex = x.length}for (i = 0; i < x.length; i++) {x[i].style.display = "none";x[i].style.marginTop = 0;x[i].style.marginLeft = 0;x[i].style.zIndex = 1000;}x[slideIndex].style.display = "inline";x[slideIndex-1].style.display = "block";x[slideIndex].style.zIndex = 0;x[slideIndex-1].style.zIndex = 1000;x[slideIndex].style.position = "absolute";x[slideIndex-1].style.position = "relative";
         }
         $.getJSON("https://www.reddit.com/r/dankmemes/.json?jsonp=?&limit=69", function(data) {$.each(data.data.children, function(i,item){ var ext = String(item.data.url).substr(String(item.data.url).length - 4); if ( ext == ".png" || ext == ".jpg" || ext == "jpeg" || ext == ".gif") {
-              $("<img/>").attr("src", item.data.url).attr("class","mySlides").appendTo("#images");
+              $("<div/>").css('background-image', 'url(\''+item.data.url+'\')').attr("class","mySlides").appendTo("#images");
               //$("<div/>").attr("style", "background-image:\""+item.data.url+"\"").attr("class","mySlides").appendTo("#images");
             }
           });
