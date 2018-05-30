@@ -129,6 +129,30 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         Best of that other <span style="font-family: 'sansb';">site</span>, yea that one... you know.
       </div>
 
+      <script>
+      var eventPosition = 750; // This is the height position you want the event to fire on.
+
+      $(window).scroll(function(){
+        var scrollPos = $(document).scrollTop();
+        console.log(scrollPos);
+        if (scrollPos >= eventPosition) {
+          fireEvent();
+        }
+      });
+
+      function fireEvent() {
+        $('.dawkins').animateCss('tada', function() {
+          document.getElementById('richard').style.display = 'none';
+          //document.getElementById('richard').style.opacity = '0';
+
+
+            var element = document.getElementsByClassName('mySlides');
+            for(var i = 0, length = element.length; i < length; i++) {
+              element[i].style.visibility = 'visible';
+            }
+          });
+      };
+      </script>
 
       <div class="phone">
         <button id="leftButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(-1)" onmouseover="clearInterval(rbounce);"></button>
