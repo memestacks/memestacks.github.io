@@ -108,7 +108,7 @@ input::placeholder {
 	margin-top:-1vh;
 	width:4vw;
 	margin-left:8.3vw;
-	height:7vh;
+	height:4vw;
 	border-radius:2vw;
 	outline:0 !important;
 	z-index: 100;
@@ -125,7 +125,7 @@ input::placeholder {
 	margin-top:-1vh;
 	width:4vw;
 	margin-left:17.6vw;
-	height:7vh;
+	height:4vw;
 	border-radius:2vw;
 	outline:0 !important;
 	opacity:0;
@@ -454,6 +454,12 @@ margin-top:28vw;
   margin-left: 3.5vw;
   margin-top: 13.25vw;
 
+	-webkit-transition: opacity 0.5s ease-in-out;
+	 -moz-transition: opacity 0.5s ease-in-out;
+	 -ms-transition: opacity 0.5s ease-in-out;
+	 -o-transition: opacity 0.5s ease-in-out;
+		opacity: 1;
+
 }
 /*
 position: absolute;
@@ -641,7 +647,7 @@ span a {
 			width: 5vw;
 			height: 5vw;
 			border-radius: 2.5vw;
-			margin-top:-9.1vh;
+			margin-top:-8.5vh; /*9.1*/
 			margin-left:9.5vw;
 			opacity: 0.5;
 		}
@@ -649,17 +655,30 @@ span a {
 			width: 5vw;
 			height: 5vw;
 			border-radius: 2.5vw;
-			margin-top:-9.1vh;
+			margin-top:-8.5vh;
 			margin-left:20.3vw;
 			opacity: 0.5;
 		}
 
 		#backButton {
-			margin-top: -8.4vh;
+			margin-top: -8vh;
     	width: 3.5vw;
     	margin-left: 4.9vw;
     	height: 3.5vw;
 		}
+		#saveButton {
+			margin-top: -8vh !important;/*8.4*/
+			width: 3.5vw;
+			margin-left: 15.7vw !important;
+			height: 3.5vw;
+		}
+		#shareButton {
+			margin-top: -8vh !important;
+			margin-left: 26vw !important;
+			width: 3.5vw;
+			height: 3.5vw;
+		}
+
 
 		#form {
 			margin-top: 5vw;
@@ -862,7 +881,7 @@ span a {
 			width: 8vw;
 			height: 8vw;
 			border-radius: 4vw;
-			margin-top:2.2vh;
+			margin-top:0.2vh;
 			margin-left:14.8vw;
 			opacity: 0.5;
 		}
@@ -870,9 +889,30 @@ span a {
 			width: 8vw;
 			height: 8vw;
 			border-radius: 4vw;
-			margin-top:2.2vh;
+			margin-top:0.2vh;
 			margin-left:32vw;
 			opacity: 0.5;
+		}
+		#shareButton {
+			width: 5vw;
+			height: 5vw;
+			border-radius: 5vw;
+			margin-left: 42.5vw;
+			margin-top: 1vh;
+		}
+		#saveButton {
+			width: 5vw;
+			height: 5vw;
+			border-radius: 5vw;
+			margin-left: 25vw;
+			margin-top: 1vh;
+		}
+		#backButton {
+			width: 5vw;
+			height: 5vw;
+			border-radius: 5vw;
+			margin-left: 7.5vw;
+			margin-top: 1vh;
 		}
 
 		.get-beta {
