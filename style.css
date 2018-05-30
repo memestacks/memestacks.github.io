@@ -99,6 +99,9 @@ input::placeholder {
 	color: black;
 }
 
+.pbutton {
+	margin-top:44.6vw !important;
+}
 #images {
 	margin-top:25vh;
 	z-index: 0;
@@ -633,6 +636,10 @@ span a {
   and (min-device-width: 480px)
   and (max-device-width: 1024px) {
 
+		.pbutton {
+			margin-top:51.6vw !important;
+		}
+
 		.mySlides {
 			min-width: 21vw !important;
 			max-width: 21vw !important;
@@ -667,13 +674,13 @@ span a {
     	height: 3.5vw;
 		}
 		#saveButton {
-			margin-top: -8vh !important;/*8.4*/
+			/*margin-top: -8vh !important;/*8.4*/
 			width: 3.5vw;
 			margin-left: 15.7vw !important;
 			height: 3.5vw;
 		}
 		#shareButton {
-			margin-top: -8vh !important;
+			/*margin-top: -8vh !important;*/
 			margin-left: 26vw !important;
 			width: 3.5vw;
 			height: 3.5vw;
@@ -871,6 +878,10 @@ span a {
 			min-width: 32vw !important;
 			width: 29vw !important;
 			height: 50vw !important;
+		}
+
+		.pbutton {
+			margin-top:81.6vw !important;
 		}
 
 		#images {

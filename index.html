@@ -131,6 +131,11 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
 
       <div class="phone">
+        <button id="leftButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(-1)" onmouseover="clearInterval(rbounce);"></button>
+        <button id="rightButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(1)" onmouseover="clearInterval(rbounce);"></button>
+        <button id="backButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(0)" onmouseover="clearInterval(rbounce);"></button>
+        <button id="shareButton" style="opacity:1.0 !important;" class="dawkins pbutton"></button>
+        <button id="saveButton" style="opacity:1.0 !important;" class="dawkins pbutton"></button>
         <img src="dawkins.png" id="richard" onmouseover="$('.dawkins').animateCss('tada', function() {
           document.getElementById('richard').style.display = 'none';
           //document.getElementById('richard').style.opacity = '0';
@@ -174,16 +179,12 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
             </style>
 
         <div id="images" class="w3-content w3-display-container dawkins">
-            <div class="mySlides" style="display: none !important; margin-top: -1.2vw; margin-left: 0px; z-index: 1000; position: relative; visibility: hidden;"> <br><br><br><center><span style="text-align:center;font-size:10vw;">69</span> <br><span>new hot memes of 2018</span></center></div>
+            <div class="mySlides" style="display: none !important; margin-top: -1.2vw; margin-left: 0px; z-index: 1000; position: relative; visibility: hidden;"> <center><span style="text-align:center;font-size:10vw;font-family: 'sansb';margin-top:10vw;line-height:20vw;">69</span> <br><span style="font-family: 'sansb';font-size:2vw;">newest and hotest memes of 2018</span></center></div>
         </div>
         <!--<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>-->
 
-        <button id="leftButton" style="opacity:1.0 !important;" class="dawkins" onclick="help(-1)" onmouseover="clearInterval(rbounce);"></button>
-        <button id="rightButton" style="opacity:1.0 !important;" class="dawkins" onclick="help(1)" onmouseover="clearInterval(rbounce);"></button>
-        <button id="backButton" style="opacity:1.0 !important;" class="dawkins" onclick="help(0)" onmouseover="clearInterval(rbounce);"></button>
-        <button id="shareButton" style="opacity:1.0 !important;" class="dawkins"></button>
-        <button id="saveButton" style="opacity:1.0 !important;" class="dawkins"></button>
+
 
         <script>
         var rbounce = null
