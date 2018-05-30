@@ -154,8 +154,13 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       };
       </script>
 
+      <script>
+
+
+      </script>
+
       <div class="phone">
-        <button id="leftButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(-1)" onmouseover="clearInterval(rbounce);"></button>
+        <button id="leftButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(-1)" onmouseover="clearInterval(rbounce);" ></button>
         <button id="rightButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(1)" onmouseover="clearInterval(rbounce);"></button>
         <button id="backButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(0)" onmouseover="clearInterval(rbounce);"></button>
         <button id="shareButton" style="opacity:1.0 !important;" class="dawkins pbutton"></button>
@@ -232,6 +237,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                             times: 1,
                             distance: 8
                          },200)
+                         //$('#rightButton').animateCss('pulse');
             $(".mySlides[style*='block']").css({ fontSize: 0 }).animate({
     fontSize: 45
 },{
@@ -253,12 +259,14 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                   times: 1,
                   distance: 8
                },200)
+               //$('#backButton').animateCss('pulse');
   plusDivs(-1);
 } else {
   $('#leftButton').effect('bounce', {
                   times: 1,
                   distance: 8
                },200)
+               //$('#leftButton').animateCss('pulse');
             $(".mySlides[style*='block']").css({ fontSize: 0 }).animate({
     fontSize: 45
 },{
