@@ -142,15 +142,17 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
       function fireEvent() {
         $('#richard').animateCss('tada', function() {
-          document.getElementById('richard').style.display = 'none';
-          //document.getElementById('richard').style.opacity = '0';
-
-
+          $('#richard').animateCss('fadeOut', function() {
+            document.getElementById('richard').style.display = 'none';
             var element = document.getElementsByClassName('mySlides');
             for(var i = 0, length = element.length; i < length; i++) {
               element[i].style.visibility = 'visible';
+              element[i].id = 'card'+i;
+              $('#card'+i).animateCss('fadeIn');
+              $('#card'+i+1).animateCss('fadeIn');
             }
-          });
+          })
+        });
       };
       </script>
 
@@ -225,10 +227,11 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         $(document).ready(function() {
             rbounce = setInterval(function() {
 
-                $('#rightButton').effect('bounce',1000)
-                $('#leftButton').effect('bounce',1000)
+                $('#rightButton').effect('bounce',1000, function() {
+                  $('#leftButton').effect('bounce',1000)
+                })
 
-            }, 1000);
+            }, 2000);
           });
         </script>
 
@@ -344,9 +347,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
             <span class="bottomLinks blleft">
               <a href="#">Patreon</a><br>
-              <a href="#">contact@memestacks.com</a><br>
-              <a href="#">invest@memestacks.com</a><br>
-              <a href="#">advertise@memestacks.com</a><br>
+              <a href="mailto:contact@memestacks.com">contact@memestacks.com</a><br>
+              <a href="mailto:invest@memestacks.com">invest@memestacks.com</a><br>
+              <a href="mailto:advertise@memestacks.com">advertise@memestacks.com</a><br>
               <a href="#">Report bug</a><br>
             </span>
 
