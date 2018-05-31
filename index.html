@@ -165,18 +165,19 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         <button id="backButton" style="opacity:1.0 !important;" class="dawkins pbutton" onclick="help(0)" onmouseover="clearInterval(rbounce);"></button>
         <button id="shareButton" style="opacity:1.0 !important;" class="dawkins pbutton"></button>
         <button id="saveButton" style="opacity:1.0 !important;" class="dawkins pbutton"></button>
-        <img src="dawkins.png" id="richard" onmouseover="$('.dawkins').animateCss('tada', function() {
-          document.getElementById('richard').style.display = 'none';
-          //document.getElementById('richard').style.opacity = '0';
+        <img src="dawkins.png" id="richard" onmouseover="
 
-
+        $('#richard').animateCss('tada', function() {
+          $('#richard').animateCss('fadeOut', function() {
+            document.getElementById('richard').style.display = 'none';
             var element = document.getElementsByClassName('mySlides');
             for(var i = 0, length = element.length; i < length; i++) {
               element[i].style.visibility = 'visible';
             }
+          })
+        });
 
-
-});" class="dawkins animated">
+" class="dawkins animated">
         <!--
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
