@@ -173,6 +173,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
             var element = document.getElementsByClassName('mySlides');
             for(var i = 0, length = element.length; i < length; i++) {
               element[i].style.visibility = 'visible';
+              element[i].id = 'card'+i;
+              $('#card'+i).animateCss('fadeIn');
+              $('#card'+i+1).animateCss('fadeIn');
             }
           })
         });
