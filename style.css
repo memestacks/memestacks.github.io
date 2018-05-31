@@ -196,37 +196,6 @@ input::placeholder {
 	box-shadow: 0vw 0.23vw 0.85vw rgba(0,0,0,.05);
 }
 
-#leftButton:hover {
-	width: 4.2vw;
-	height: 4.2vw;
-	margin-top: 44.5vw;
-	margin-left: 8.2vw;
-}
-#rightButton:hover {
-	width: 4.2vw;
-	height: 4.2vw;
-	margin-top: 44.5vw;
-	margin-left: 17.5vw;
-}
-#backButton:hover {
-	width: 3.5vw;
-	height: 3.5vw;
-	margin-top: 44.5vw;
-	margin-left: 3.9vw;
-}
-#shareButton:hover {
-	width: 3.5vw;
-	height: 3.5vw;
-	margin-top: 44.5vw;
-	margin-left: 22.4vw;
-}
-#saveButton:hover {
-	width: 3.5vw;
-	height: 3.5vw;
-	margin-top: 44.5vw;
-	margin-left: 13.2vw;
-}
-
 input[type="email"] {
 	display: inline-block;
 	width: 20vw;
