@@ -292,7 +292,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         function showDivs(n) {
           var i;var x = document.getElementsByClassName("mySlides");if (n > x.length) {slideIndex = 1}if (n < 1) {slideIndex = x.length}for (i = 0; i < x.length; i++) {x[i].style.display = "none";x[i].style.marginTop = "-1.2vw";x[i].style.marginLeft = 0;x[i].style.zIndex = 1000;}x[slideIndex].style.display = "inline";x[slideIndex].style.marginTop = "-0.7vw";x[slideIndex-1].style.display = "block";x[slideIndex].style.zIndex = 0;x[slideIndex-1].style.zIndex = 1000;x[slideIndex].style.position = "absolute";x[slideIndex-1].style.position = "relative";
         }
-        $.getJSON("https://www.reddit.com/r/dankmemes/.json?jsonp=?&limit=69", function(data) {$.each(data.data.children, function(i,item){ var ext = String(item.data.url).substr(String(item.data.url).length - 4); if ( ext == ".png" || ext == ".jpg" || ext == "jpeg" || ext == ".gif") {
+        $.getJSON("https://www.reddit.com/r/meirl/.json?jsonp=?&limit=69", function(data) {$.each(data.data.children, function(i,item){ var ext = String(item.data.url).substr(String(item.data.url).length - 4); if ( ext == ".png" || ext == ".jpg" || ext == "jpeg" || ext == ".gif") {
               $("<div/>").css('background-image', 'url(\''+item.data.url+'\')').attr("class","mySlides").appendTo("#images");
               //$("<div/>").attr("style", "background-image:\""+item.data.url+"\"").attr("class","mySlides").appendTo("#images");
             }
